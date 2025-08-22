@@ -1,0 +1,17 @@
+<div class="badge bg-warning bg-pill">121222.08.25 09:38</div><br>
+                    <div class="alert alert-success mt-3 p-1">211</div>
+                    <br><div class="badge bg-warning bg-pill">121222.08.25 09:38</div><br>
+                    <div class="alert alert-success mt-3 p-1">211</div>
+                    <br><div class="badge bg-warning bg-pill">21122.08.25 09:41</div><br>
+                    <div class="alert alert-success mt-3 p-1">211</div>
+                    <br><div class="badge bg-warning bg-pill">лохи22.08.25 09:41</div><br>
+                    <div class="alert alert-success mt-3 p-1">ск</div>
+                    <br><div class="badge bg-warning bg-pill">Влад22.08.25 09:42</div><br>
+                    <div class="alert alert-success mt-3 p-1">рппрр</div>
+                    <br><div class="badge bg-warning bg-pill">Влад22.08.25 09:42</div><br>
+                    <div class="alert alert-success mt-3 p-1">рппрр</div>
+                    <br><div class="badge bg-warning bg-pill">Влад Савченко 22.08.25 21:44</div><br>
+                   <div class="alert alert-success mt-3 p-1">Делаем вещи</div>
+                   <br><div class="badge bg-warning bg-pill">паша дуров 22.08.25 21:47</div><br>
+                   <div class="alert alert-success mt-3 p-1">здарова пацаны</div>
+                   <br>
