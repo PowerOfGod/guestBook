@@ -35,17 +35,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mt-5">
-                    <?php
-                    include 'foo.php';
-                    // var_dump($arr); // Уберите var_dump - он портит HTML
-                    if (!empty($arr)) {
-                        foreach ($arr as $text) {
-                            echo $text;
+                  <?php
+                        include 'foo.php';
+                        
+                        if ($stmt && $stmt->rowCount() > 0) {
+                            while($user = $stmt->fetch(PDO::FETCH_ASSOC)){
+                                $date = date('d.m.Y H:i', strtotime($user['created_at']));
+                                
+                                echo '
+                                <div class="message-container">
+                                    <div class="user-badge">
+                                        <span class="badge bg-warning bg-pill">' . htmlspecialchars($user['name']) . '</span>
+                                        <small class="text-muted ms-2">' . $date . '</small>
+                                    </div>
+                                    <div class="alert alert-success mt-3 p-1">' . nl2br(htmlspecialchars($user['text'])) . '</div>
+                                </div>';
+                            }
+                        } else {
+                            echo '<div class="alert alert-info text-center">Пока нет сообщений. Будьте первым!</div>';
                         }
-                    } else {
-                        echo '<div class="alert alert-info">Пока нет сообщений. Будьте первым!</div>';
-                    }
-                    ?>
+                        ?>
                     <form action="<?php echo $_SERVER['SCRIPT_NAME']; ?>" method="post">
                         <div class="form-group">
                             <small>Введите имя</small>
